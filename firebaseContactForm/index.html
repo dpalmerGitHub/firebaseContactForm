@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatabile" content="ie=edge">
+    <title>Firebase Contact Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid myHeader">
+        <div class="col-xl-6 col-xl-offset-3 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 ">
+            <div class="mainForm ">
+                <h2 class=" text-center ">Let's Talk</h2>
+                <form id="contactForm ">
+                    <div class="form-group row ">
+                        <div class="col-md-6 col-md-offset-3 ">
+                            <label for="name ">Name</label>
+                            <input class="form-control " type="text " id="name " required>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <div class="col-md-6 col-md-offset-3 ">
+                            <label for="name ">Email</label>
+                            <input class="form-control " type="email " id="email " required>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <div class="col-md-6 col-md-offset-3 ">
+                            <label for="message ">Message</label>
+                            <textarea class="form-control " type="text " id="message " required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <div class="col-xl-6 col-xl-offset-3 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-sm-12 ">
+                            <button class="btn " type="submit " id="submitFormButton ">Submit</button>
+                            <div class="alert ">Thank you. Your message has been successfully submitted.</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js "></script>
+    <script src="scripts.js "></script>
+</body>
+
+
+</html>
